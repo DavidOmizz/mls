@@ -1,0 +1,551 @@
+/* Navbar --------------------------------------------------------->>>>>>>>>>> */
+*{
+    max-width: 100%;
+}
+.containers {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    line-height: 50px;
+    align-items: center;
+    position: fixed;
+    width: 100% !important;
+    margin-top: -100px;
+}
+.logo img{
+    height: 40px;
+    margin-left: 30% !important;
+}
+.nav-list {
+    margin-right: 7%;
+}
+.nav-list ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    color: #b8b8b8 !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-list ul a:focus {
+    color: black !important;
+    padding: 5px;
+}
+.nav-list ul li a:visited {
+    color: black !important;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+}
+.nav-list ul a:hover{
+    color: green;
+}
+
+.hero-container {
+    margin-top: 100px;
+    background: url('../images/home_banner.jpg');
+    background-position: top center;
+    height: 100vh;
+    /* padding: 1000px; */
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.hero-container h1{
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 350;
+    font-size: 3.5em;
+    padding-top: 15%;
+}
+.hero-container p {
+    color: #b8b8b8;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+.hero-container button {
+    background-color: rgba(7, 185, 31,0.8);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    letter-spacing: 6px;
+}
+.hero-container button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+
+/* Section1 style ---------------------------------------------------->>>>>>>>>>>>>>>>> */
+
+.section1-row-container {
+    /* width: 80%; */
+    /* background-color: red !important; */
+}
+.section1-container--divider {
+    padding: 0.12%;
+    width: 10%;
+    margin: 0 auto;
+    background-color: #37A000;
+}
+.container-fluids {
+    /* justify-items: center !important; */
+    /* background-color: red !important; */
+    /* width: 40% !important; */
+    margin: 0 auto !important;
+    text-align: center;
+    /* padding: 20px; */
+    margin-bottom: 10%;
+}
+.section1--row-cards {
+    background-color: white;
+    padding: 40px 20px !important;
+    margin: 0 auto !important;
+    /* width: 29% !important; */
+    border-radius: 5px;
+}
+#section1--row-cards--3 {
+    /* width: 29.5% !important; */
+}
+#section1--row-cards--3 span{
+    color: #b8b8b8;
+}
+
+.section1--row-cards-title {
+    color: #37A000 !important;
+    font-size: 23px !important;
+    text-align: left;
+    font-weight: 400 !important;
+}
+.section1--row-cards-sub {
+    text-align: left;
+    font-size: 16px !important;
+    color: #5A5A5A;
+    font-weight: 400 !important;
+}
+.section1--row-cards button {
+    background-color: #37A000;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: white;
+    letter-spacing: 2px;
+}
+.section1--row-cards button:hover {
+    background-color: rgba(61, 61, 61, 0.63);
+}
+.section1--row-cards--3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section1--row-cards--3 .section1--row-cards-title {
+    /* font-size: 20px !important; */
+}
+.section1--row-cards--3 button {
+    margin-top: -50px;
+    background-color: rgb(2, 2, 104);
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.section1--row-cards-inputs {
+    display: flex;
+}
+
+
+.section1-container{
+    text-align: center;
+    background-color: #E5E5E5;
+    /* margin-top: -30px; */
+    padding: 40px;
+}
+.section1-container h4 {
+    color: #5A5A5A;
+    font-size: 40px;
+    font-weight: 300;
+}
+.section1-container p {
+    margin-top: -25px;
+    font-size:22px;
+    font-weight: 300;
+    color: rgb(175,175,175);
+}
+
+.section1-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section1-cards--card1 {
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+#section1-cards--card1 {
+    background-color: white;
+    width: 27%;
+    padding: 10px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+.section1-cards--card1 {
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+#section1-cards--card1--title {
+    font-weight: 400;
+    color: green;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+.section1-cards--card1 p {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+#section1-cards--card1 p {
+    text-align: left;
+    margin-left: 30px;
+    /* font-size: px; */
+    width: 80%;
+}
+.section1--card1-div {
+    display: flex;
+    /* padding-top: 40px; */
+    align-items: center;
+}
+.section1--card1-div p {
+    font-weight: 400;
+    color: green;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+.section1--card1-div button {
+    margin-top: -10px !important;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    background-color: blue !important;
+    line-height: 3px;
+}
+#section1-cards--card1--title--sub {
+    /* color: red; */
+    font-size: 15px;
+}
+.section1-cards--card1 input {
+    outline: none;
+    border: 1px solid #c4c2c2;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+#section1-cards--card1 input{
+    outline: none;
+    border: 1px solid #c4c2c2;
+    border-radius: 5px;
+    /* width: 80%; */
+    padding: 10px;
+    margin: 10px;
+}
+#section1-cards--card1 span {
+    margin-bottom: -8px !important;
+    display: block;
+    color: #b8b8b8;
+}
+#section1-cards--card1-text{
+    /* font-weight: 400; */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    /* text-align: center !important; */
+}
+.section1-cards--card1-input1 {
+    width: 110px;
+    justify-content: center;
+}
+.section1-cards--card1-input2 {
+    width: 80%;
+    margin-top: -4px !important;
+}
+.section1-cards--card1 button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    display: block;
+    margin-left: 20px;
+}
+#section1-cards--card1 button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    margin-left: 20px;
+}
+
+
+/* Section2 style ---------------------------->>>> */
+.section2-container {
+    /* padding: 80px; */
+    margin-bottom: 70px;
+}
+.section2-container h3{
+    text-align: center;
+    color: #5A5A5A;
+    /* padding: 40px; */
+    font-weight: 300;
+    font-size: 40px;
+}
+.section2-container span {
+    background-color: green;
+    padding: 1px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+.section2-container p {
+    text-align: left;
+    color: #5e5d5d;
+    margin-top: 50px !important;
+    /* font-size: 19px; */
+    width: 50%;
+    margin:auto;
+}
+.section12-container--divider {
+    padding: 0.09%;
+    width: 10% !important;
+    margin: 0 auto;
+    background-color: #37A000;
+}
+
+/* section3 style ------------------->>>>>>>>>>>>> */
+.section3-container {
+    background-color: #E5E5E5;
+    /* padding: 50px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-top: 40px;
+    text-align: center;
+}
+.section3-container ul{
+    list-style-type: none;
+    color: green;
+    font-size: 12px;
+    line-height: 25px;
+    /* padding: 70px; */
+    /* display: block; */
+}
+.section3-container a {
+    color: rgb(4, 85, 4);
+    text-decoration: none;
+}
+.section3-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* section4 style --------------------->>>>>>>>>>>> */
+.section4-container {
+    text-align: center;
+    padding: 50px;
+    color: #37A000;
+}
+.section4-container p {
+    font-size: 20px;
+    color: #5e5d5d;
+}
+.section4-container a{
+    color: #37A000;
+    text-decoration: none;
+}
+.section4-container a:hover {
+    text-decoration: underline;
+}
+
+/* footer style ------------------------------->>>>>> */
+.footer {
+    background-color: #37A000;
+    padding: 0 50px;
+}
+.footer-container {
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 10%;
+    /* gap: 50px;
+    align-items: center; */
+}
+.footer-container p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.footer-container a{
+    color: #74C878;
+    text-decoration: none;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.footer-container--links {
+    display: flex;
+}
+.footer-container--links ul{
+   list-style: none;
+   line-height: 30px;
+}
+.footer-container--text {
+    /* color: white; */
+    width: 50%;
+    font-size: 0px !important;
+}
+.footer-container--text P{
+    /* color: white; */
+    font-size: 16px;
+}
+.footer--copyright {
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* Foreclosures style ------------------------?>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.foreclosure1-container {
+    margin-top: 100px;
+    background-color: #E5E5E5;
+    /* display: flex; */
+        /* color: red; */
+    padding: 100px;
+    justify-content: center;
+}
+
+.foreclosure1--card {
+    background-color: white;
+    width: 34%;
+    padding: 15px;
+    margin-left: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 7px
+}
+.foreclosure1--card-div {
+    display: flex;
+    align-items: center;
+}
+#foreclosure1--card--title3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: green;
+    /* padding-bottom: 15px; */
+    /* margin-top: 10px; */
+    /* margin-left: 10px; */
+}
+.foreclosure1--card-div button {
+    letter-spacing: 2px;
+    background-color: blue !important;
+    border: none;
+    /* height: 20px; */
+    /* margin-top: 20px; */
+    font-size: 13px !important;
+    padding: 0 15px;
+    width: fit-content;
+    margin-left: 90px;
+    border-radius: 5px;
+    color: white;
+}
+#foreclosure1--card--title--sub {
+    color: #5A5A5A;
+    font-size: 15px;
+    text-align: left;
+    /* margin-left: 20px; */
+}
+.foreclosure1--card-input1 {
+    display: flex;
+    justify-content: center;
+}
+/* .foreclosure1--card-input1,select {
+    outline: none;
+    border: 1px solid #c4c2c2;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    
+} */
+/* .foreclosure1--card select{
+    width: 20%;
+} */
+.foreclosure1--card span {
+    /* margin-bottom: -8px !important; */
+    /* display: block; */
+    color: #b8b8b8;
+    margin-left: -20px !important;
+}
+
+#foreclosure1--card-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    /* padding: 15px; */
+    border-radius: 5px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: 30%;
+    cursor: pointer;
+    /* margin-left: 20px; */
+    display: block;
+}
+.foreclosure1--card button:hover {
+    background-color: #5A5A5A !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        display: none;
+    }
+    .hero-container h1{
+        margin-top: 100px;
+        /* padding: 50px; */
+        letter-spacing: 3px;
+        font-weight: 250;
+        font-size: 2em;
+        padding-top: 40%;
+    }
+    .hero-container button {
+        background-color: rgba(7, 185, 31,0.8);
+        border: none;
+        padding: 8px 20px;
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+}
