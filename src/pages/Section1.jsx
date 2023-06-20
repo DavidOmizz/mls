@@ -11,6 +11,7 @@ function Section1() {
         {/* <div className='container mb-5 '> */}
             <div className='row'>
                <div className='section1-container--cards'>
+                
                     <div className='section1--row-cards'>
                         <p className='section1--row-cards-title mb-5'>Find Real Estate Listings</p>
                         <p className='section1--row-cards-sub mb-4'>Search for listings near you.</p>
