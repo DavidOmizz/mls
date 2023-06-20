@@ -606,6 +606,9 @@
         text-align: center;
         margin-bottom: 60px;
     }
+    .section1-container {
+        padding: 20px;
+    }
     .section1-container--cards {
         display: block;
         /* justify-content: center !important; */
