@@ -22,13 +22,15 @@ function Navbar() {
           isNavExpanded ? "nav-list expanded" : "nav-list"
         }>
             <ul>
-                <li><a href={'/foreclosures'}>Foreclosures</a></li>
+                {/* <li><a href={'/foreclosures'}>Foreclosures</a></li> */}
+                <li>
                 <NavLink
                   to='/foreclosures'
                   className="nav-link active text-dark"
                   aria-current="page"
                   href="#"
-                ></NavLink>
+                >Foreclosures</NavLink>
+                </li>
                 <li><a href={'https://www.newhomesource.com/?refer=mlscom'} target='_blank'>New Homes</a></li>
                 <li><a href={'https://www.topagentsranked.com/signup02?utm_source=mlsdotcom&utm_campaign=textlink'} target='_blank'>Find an Agent</a></li>
                 <li><a href={''}>Real Estate Classes</a></li>
