@@ -1,6 +1,7 @@
 /* Navbar --------------------------------------------------------->>>>>>>>>>> */
 *{
     max-width: 100%;
+    scroll-behavior: smooth;
 }
 .containers {
     display: flex;
@@ -465,128 +466,135 @@
     margin-top: 100px;
     background-color: #E5E5E5;
     display: flex;
-    padding: 100px;
-    justify-content: center;
+    justify-content: space-around;
+}
+.foreclosure1-container--title {
+    padding-top: 5%;
+}
+
+/* ------------------ */
+.foreclosure1--card-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 28%;
 }
 
 .foreclosure1--card {
     background-color: white;
-    width: 3%;
-    padding: 15px;
-    margin-left: 20px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 7px
-}
-.foreclosure1--card-div {
-    display: flex;
-    align-items: center;
-}
-#foreclosure1--card--title3 {
-    font-weight: 400;
-    font-size: 20px;
-    color: green;
-    /* padding-bottom: 15px; */
-    /* margin-top: 10px; */
-    /* margin-left: 10px; */
-}
-.foreclosure1--card-div button {
-    letter-spacing: 2px;
-    background-color: blue !important;
-    border: none;
-    /* height: 20px; */
-    /* margin-top: 20px; */
-    font-size: 13px !important;
-    padding: 0 15px;
-    width: fit-content;
-    margin-left: 100px;
     border-radius: 5px;
-    color: white;
-}
-#foreclosure1--card--title--sub {
-    color: #5A5A5A;
-    font-size: 15px;
-    text-align: left;
-    /* margin-left: 20px; */
-}
-/* .foreclosure1--card-input1 {
-    display: flex;
-    justify-content: center;
-} */
-/* .foreclosure1--card-input1,select {
-    outline: none;
-    border: 1px solid #c4c2c2;
-    border-radius: 5px;
-    width: 40%;
-    padding: 10px;
-    margin: 10px;
-    
-} */
-/* .foreclosure1--card select{
-    width: 20%;
-} */
-.foreclosure1--card span {
-    /* margin-bottom: -8px !important; */
-    /* display: block; */
-    color: #b8b8b8;
-    margin-left: -20px !important;
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 20px;
+    /* text-align: center; */
 }
 
-#foreclosure1--card-btn {
-    background-color: green;
-    color: white;
-    border: none;
-    /* padding: 15px; */
-    border-radius: 5px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-    width: 30%;
-    cursor: pointer;
-    /* margin-left: 20px; */
-    display: block;
-}
-.foreclosure1--card button:hover {
-    background-color: #5A5A5A !important;
-}
-
-#foreclosure1--card span{
-    color: #b8b8b8;
-    text-align: center;
-    margin-left: 14px !important;
-}
-.foreclosure1--card--title {
-    color: #37A000 !important;
-    font-size: 23px !important;
-    text-align: left;
-    font-weight: 400 !important;
-}
-.foreclosure1--card--cont {
+.foreclosure1--card--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 18px;
+    padding-top: 20px;
+}
+.foreclosure1--card--header p {
+    color: #37A000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.foreclosure1--card--header button {
+    background-color: rgb(69, 69, 179) !important;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 4px 7px;
+    letter-spacing: 2px; 
+}
+
+.foreclosure1--card-sub {
+    font-size: 17px;
+    color: #9e9d9d;
+    text-align: left;
+}
+.foreclosure1--card-inputs {
+    display: flex;
+}
+.foreclosure1--card span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .foreclosure1--card button {
     background-color: #37A000;
-    display: block;
     border: none;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    color: white;
     border-radius: 5px;
-    color: #fff;
-    padding: 0 25px;
+    margin-bottom: 20px;
 }
 
-.foreclosure1--card--cont button{
-    margin-top: -10px;
-    background-color: rgb(2, 2, 104);
-    padding: 0.5px 10px;
-    font-size: 14px;
-    color: white;
+
+/* Foreclosurs2 style ------------------------------------ */
+
+.foreclosures2-container {
+    display: flex;
+    justify-content: space-around;
+}
+.foreclosures2--link-container {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.letter-section ul {
+    list-style-type: none;
+}
+.letter-section ul a{
+    text-decoration: none;
+    color: #37A000;
+    font-size: 13px;
+}
+
+
+/* ------------------ */
+.foreclosures2--card-container {
+    width: 28%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.foreclosures2--card {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.foreclosures2--card-title {
+    padding-top: 20px;
+    color: #37A000;
+    font-size: 22px;
+}
+.foreclosures2--card-sub {
+    color: #5e5d5d;
+    font-size: 18px;
+}
+
+.foreclosures2--card button {
+    background-color: #37A000;
     border: none;
     border-radius: 5px;
+    padding: 8px 13px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
+
 
 
 @media screen and (max-width: 768px) {
     
+    .logo img{
+        height: 40px;
+        margin-left: 10% !important;
+    }
     .hero-container h1{
         margin-top: 100px;
         /* padding: 50px; */
@@ -607,11 +615,12 @@
         letter-spacing: 3px;
     }
     .foreclosure1-container {
-        display: block !important;
+        display: block;
+        justify-content: center;
     }
     .foreclosure1--card {
+        width: 80%;
         margin: 0 auto;
-        width: 50px !important;
     }
     .foreclosure1-container--title {
         text-align: center;
@@ -652,9 +661,7 @@
         /* width: 40% !important; */
         justify-content: center;
     }
-}
 
-@media screen and (max-width: 768px) {
     .nav-list ul {
       /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
       position: absolute;
@@ -687,6 +694,31 @@
     .nav-list li:hover {
       background-color: #eee;
     }
+
+    /* ----------------------- */
+    .foreclosure1-container {
+        /* background-color: red; */
+    }
+    .foreclosure1--card-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+
+    /* ------------------------ */
+    .foreclosures2-container {
+        display: block;
+        /* width: 20%; */
+    }
+    .foreclosures2--link-container {
+        display: block;
+        padding: 20px;
+    }
+
+    .foreclosures2--card-container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 .hamburger svg {
     height: 1.5em;
@@ -715,7 +747,7 @@
   } */
 
 .foreclosure1--card {
-    width: 30% !important;
+    width: 30%;
 }
 
 

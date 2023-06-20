@@ -2,12 +2,11 @@ import React from 'react'
 
 function Foreclosures2() {
   return (
-    <div>
-        <div class="container">
-		<div class="row animate-box fadeInUp animated">
-			<div class="col-md-3 col-sm-4 col-xs-6 letter-section">
+    <div  className='foreclosures2-container'>
+		<div class="foreclosures2--link-container">
+			<div class="letter-section">
 				<h4>A</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/alabama.mvc">Alabama Foreclosures</a></li>
 					<li><a href="/foreclosure/search/alaska.mvc">Alaska Foreclosures</a></li>
 					<li><a href="/foreclosure/search/arizona.mvc">Arizona Foreclosures</a></li>
@@ -15,42 +14,42 @@ function Foreclosures2() {
 				</ul>
 
 				<h4>C</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/california.mvc">California Foreclosures</a></li>
 					<li><a href="/foreclosure/search/colorado.mvc">Colorado Foreclosures</a></li>
 					<li><a href="/foreclosure/search/connecticut.mvc">Connecticut Foreclosures</a></li>
 				</ul>
 
 				<h4>D</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/delaware.mvc">Delaware Foreclosures</a></li>
 					<li><a href="/foreclosure/search/district-of-columbia.mvc">DC Foreclosures</a></li>
 				</ul>
 
 				<h4>F</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/florida.mvc">Florida Foreclosures</a></li>
 				</ul>
 
 				<h4>G</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/georgia.mvc">Georgia Foreclosures</a></li>
 				</ul>
 
 				<h4>H</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/hawaii.mvc">Hawaii Foreclosures</a></li>
 				</ul>
 
 				<h4>I</h4>
-				<ul class="small-list">
+				<ul>
 					<li><a href="/foreclosure/search/idaho.mvc">Idaho Foreclosures</a></li>
 					<li><a href="/foreclosure/search/illinois.mvc">Illinois Foreclosures</a></li>
 					<li><a href="/foreclosure/search/indiana.mvc">Indiana Foreclosures</a></li>
 					<li><a href="/foreclosure/search/iowa.mvc">Iowa Foreclosures</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 col-sm-4 col-xs-6 letter-section">
+			<div class="letter-section">
 				<h4>K</h4>
 				<ul class="small-list">
 					<li><a href="/foreclosure/search/kansas.mvc">Kansas Foreclosures</a></li>
@@ -93,7 +92,7 @@ function Foreclosures2() {
 					<li><a href="/foreclosure/search/oregon.mvc">Oregon Foreclosures</a></li>
 				</ul>
 			</div>
-			<div class="col-md-2 col-sm-4 col-xs-12 letter-section">
+			<div class="letter-section">
 				<h4>P</h4>
 				<ul class="small-list">
 					<li><a href="/foreclosure/search/pennsylvania.mvc">Pennsylvania Foreclosures</a></li>
@@ -136,8 +135,144 @@ function Foreclosures2() {
 					<li><a href="/foreclosure/search/wyoming.mvc">Wyoming Foreclosures</a></li>
 				</ul>
 			</div>
-        </div>
-        </div>
+		</div>
+		<div className='foreclosures2--card-container'>
+			<div className='foreclosures2--card'>
+				<p className='foreclosures2--card-title mb-4'>Find Real Estate Listings</p>
+				<p className='foreclosures2--card-sub mb-4'>Search for listings near you.</p>
+				<div className="mb-3">
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="City"/>
+				</div>
+
+				<div className='mb-3'>
+					<select className="form-select" style={{width:'100%'}} aria-label="Default select example">
+						<option value="">Select State</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+				</div>
+
+				<div className="mb-3">
+					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Zip"/>
+				</div>
+
+				<div className="mb-3">
+					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Country"/>
+				</div>
+
+				{/* <div className='mb-3'>
+					<select className="form-select" style={{width:'100%'}} aria-label="Default select example">
+						<option value="0">No minimum</option>
+						<option value="100000">$100,000</option>
+						<option value="150000">$150,000</option>
+						<option value="160000">$160,000</option>
+						<option value="170000">$170,000</option>
+						<option value="180000">$180,000</option>
+						<option value="190000">$190,000</option>
+						<option value="200000">$200,000</option>
+						<option value="220000">$220,000</option>
+						<option value="240000">$240,000</option>
+						<option value="260000">$260,000</option>
+						<option value="280000">$280,000</option>
+						<option value="300000">$300,000</option>
+						<option value="325000">$325,000</option>
+						<option value="350000">$350,000</option>
+						<option value="375000">$375,000</option>
+						<option value="400000">$400,000</option>
+						<option value="425000">$425,000</option>
+						<option value="450000">$450,000</option>
+						<option value="475000">$475,000</option>
+						<option value="500000">$500,000</option>
+						<option value="600000">$600,000</option>
+						<option value="700000">$700,000</option>
+						<option value="800000">$800,000</option>
+						<option value="900000">$900,000</option>
+						<option value="1000000">$1,000,000+</option>
+					</select>
+				</div>
+
+				<div className='mb-3'>
+					<select className="form-select" style={{width:'100%'}} aria-label="Default select example">
+						<option value="0">No maximum</option>
+						<option value="100000">$100,000</option>
+						<option value="150000">$150,000</option>
+						<option value="160000">$160,000</option>
+						<option value="170000">$170,000</option>
+						<option value="180000">$180,000</option>
+						<option value="190000">$190,000</option>
+						<option value="200000">$200,000</option>
+						<option value="220000">$220,000</option>
+						<option value="240000">$240,000</option>
+						<option value="260000">$260,000</option>
+						<option value="280000">$280,000</option>
+						<option value="300000">$300,000</option>
+						<option value="325000">$325,000</option>
+						<option value="350000">$350,000</option>
+						<option value="375000">$375,000</option>
+						<option value="400000">$400,000</option>
+						<option value="425000">$425,000</option>
+						<option value="450000">$450,000</option>
+						<option value="475000">$475,000</option>
+						<option value="500000">$500,000</option>
+						<option value="600000">$600,000</option>
+						<option value="700000">$700,000</option>
+						<option value="800000">$800,000</option>
+						<option value="900000">$900,000</option>
+						<option value="1000000">$1,000,000+</option>
+					</select>
+				</div> */}
+				<button>SEARCH</button>
+			</div>
+		</div>
     </div>
   )
 }
