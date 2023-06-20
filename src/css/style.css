@@ -418,6 +418,7 @@
 }
 .footer-container--links {
     display: flex;
+    max-width: 100% !important;
 }
 .footer-container--links ul{
    list-style: none;
@@ -630,6 +631,11 @@
     }
     #containers--btn{
         display: block !important;
+    }
+    .footer-container--links {
+        max-width: 100% !important;
+        /* width: 40% !important; */
+        justify-content: center;
     }
 }
 
