@@ -83,7 +83,15 @@
 
 
 /* Section1 style ---------------------------------------------------->>>>>>>>>>>>>>>>> */
-
+.section1-container {
+    /* margin-bottom: 20px !important; */
+    margin-bottom: 70px !important;
+}
+.section1-container--cards {
+    display: inline-flex;
+    margin-top: 60px !important;
+    margin-bottom: 60px;
+}
 .section1-row-container {
     /* width: 80%; */
     /* background-color: red !important; */
@@ -107,7 +115,7 @@
     background-color: white;
     padding: 40px 20px !important;
     margin: 0 auto !important;
-    /* width: 29% !important; */
+    width: 29% !important;
     border-radius: 5px;
 }
 #section1--row-cards--3 {
@@ -123,6 +131,8 @@
     text-align: left;
     font-weight: 400 !important;
 }
+
+
 .section1--row-cards-sub {
     text-align: left;
     font-size: 16px !important;
@@ -165,7 +175,7 @@
     text-align: center;
     background-color: #E5E5E5;
     /* margin-top: -30px; */
-    padding: 40px;
+    padding: 60px;
 }
 .section1-container h4 {
     color: #5A5A5A;
@@ -343,19 +353,20 @@
     /* padding: 50px; */
     /* display: flex; */
     /* justify-content: center; */
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
 }
 .section3-container ul{
     list-style-type: none;
     color: green;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 25px;
     /* padding: 70px; */
     /* display: block; */
 }
 .section3-container a {
-    color: rgb(4, 85, 4);
+    color: rgb(5, 172, 5);
     text-decoration: none;
 }
 .section3-container a:hover {
@@ -441,15 +452,14 @@
 .foreclosure1-container {
     margin-top: 100px;
     background-color: #E5E5E5;
-    /* display: flex; */
-        /* color: red; */
+    display: flex;
     padding: 100px;
     justify-content: center;
 }
 
 .foreclosure1--card {
     background-color: white;
-    width: 34%;
+    width: 3%;
     padding: 15px;
     margin-left: 20px;
     line-height: 40px;
@@ -477,7 +487,7 @@
     font-size: 13px !important;
     padding: 0 15px;
     width: fit-content;
-    margin-left: 90px;
+    margin-left: 100px;
     border-radius: 5px;
     color: white;
 }
@@ -487,10 +497,10 @@
     text-align: left;
     /* margin-left: 20px; */
 }
-.foreclosure1--card-input1 {
+/* .foreclosure1--card-input1 {
     display: flex;
     justify-content: center;
-}
+} */
 /* .foreclosure1--card-input1,select {
     outline: none;
     border: 1px solid #c4c2c2;
@@ -527,18 +537,54 @@
     background-color: #5A5A5A !important;
 }
 
+#foreclosure1--card span{
+    color: #b8b8b8;
+    text-align: center;
+    margin-left: 14px !important;
+}
+.foreclosure1--card--title {
+    color: #37A000 !important;
+    font-size: 23px !important;
+    text-align: left;
+    font-weight: 400 !important;
+}
+.foreclosure1--card--cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foreclosure1--card button {
+    background-color: #37A000;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 25px;
+}
+
+.foreclosure1--card--cont button{
+    margin-top: -10px;
+    background-color: rgb(2, 2, 104);
+    padding: 0.5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 
 @media only screen and (max-width: 600px) {
-    .nav-list {
-        display: none;
-    }
+    
     .hero-container h1{
         margin-top: 100px;
         /* padding: 50px; */
         letter-spacing: 3px;
-        font-weight: 250;
-        font-size: 2em;
+        font-weight: 300;
+        font-size: 1.5em;
         padding-top: 40%;
+    }
+    .hero-container p {
+        font-size: 14px;
     }
     .hero-container button {
         background-color: rgba(7, 185, 31,0.8);
@@ -548,4 +594,111 @@
         color: #fff;
         letter-spacing: 3px;
     }
+    .foreclosure1-container {
+        display: block !important;
+    }
+    .foreclosure1--card {
+        margin: 0 auto;
+        width: 50px !important;
+    }
+    .foreclosure1-container--title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .section1-container--cards {
+        display: block;
+        /* justify-content: center !important; */
+        margin-top: 30px !important;
+        margin-bottom: 30px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .section1--row-cards {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    /* section2 */
+    .section2-container h3 {
+        color: green;
+        font-size: 30px;
+    }
+    .section2-container p {
+        text-align: left;
+        width: 95%;
+        /* margin: 0 auto !important; */
+    }
+    #containers--btn{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list ul {
+      /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+      position: absolute;
+      top: 90px;
+      left: 40%;
+      /* // stacks the li tags vertically  */
+      flex-direction: column;
+     /* // makes menu span full height and width */
+      width: 60%;
+      height: calc(100vh - 77px);
+      background-color: white;
+      /* border-top: 1px solid black; */
+      display: none;
+      margin-right: 30px;
+    }
+    .nav-list.expanded ul {
+        display: block;
+      }
+    .nav-list li {
+      /* // centers link text and strips off margin */
+      text-align: center;
+      margin: 0;
+    }
+    .nav-list li a {
+      color: black;
+      /* // increases the surface area of the anchor tag to span the full width of the menu */
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .nav-list li:hover {
+      background-color: #eee;
+    }
+}
+.hamburger svg {
+    height: 1.5em;
+    width: 2em;
+}
+
+.hamburger{
+    /* // removes default border on button element */
+    /* border: 0; */
+    border: none;
+    padding: 0.5rem;
+    background-color: white;
+    /* border-radius: 50%; */
+    /* background-color: #283b8b; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  /* // positions the icon to the right and center aligns it vertically */
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  /* .hamburger:hover {
+    background-color: #2642af;
+  } */
+
+.foreclosure1--card {
+    width: 30% !important;
+}
+
+
+
+.mydisplay {
+    display: block !important;
 }
