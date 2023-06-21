@@ -629,6 +629,12 @@
     .section1-container {
         padding: 20px 0;
     }
+    .section1-container h4{
+        font-size: 30px;
+    }
+    .section1-container p{
+        font-size: 15px;
+    }
     .section1-container--cards {
         display: block;
         /* justify-content: center !important; */
@@ -656,26 +662,30 @@
     #containers--btn{
         display: block !important;
     }
-    .footer-container--links {
-        max-width: 100% !important;
+    .footer-container--links ul p{
+        font-size:14px !important;
+    }
+    .footer-container--links ul li a{
+        /* max-width: 100% !important; */
         /* width: 40% !important; */
-        justify-content: center;
+        /* background-color: red; */
+        font-size:14px !important;
     }
 
     .nav-list ul {
       /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
       position: absolute;
       top: 90px;
-      left: 40%;
+      left: 50%;
       /* // stacks the li tags vertically  */
       flex-direction: column;
      /* // makes menu span full height and width */
-      width: 60%;
+      width: 50%;
       height: calc(100vh - 77px);
       background-color: white;
       /* border-top: 1px solid black; */
       display: none;
-      margin-right: 30px;
+      margin-right: 50px;
     }
     .nav-list.expanded ul {
         display: block;
@@ -686,10 +696,12 @@
       margin: 0;
     }
     .nav-list li a {
-      color: black;
+      color: red !important;
       /* // increases the surface area of the anchor tag to span the full width of the menu */
-      width: 100%;
-      padding: 1.5rem 0;
+      /* width: 100%; */
+      /* padding: 1.5rem 0; */
+      font-size: 17px;
+      margin-top: 20%;
     }
     .nav-list li:hover {
       background-color: #eee;
