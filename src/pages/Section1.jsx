@@ -3,7 +3,7 @@ import React from 'react'
 function Section1() {
   return (
     <div className='section1-container'>
-        <h4 className='mb-5 mt-5'>Find Real Estate</h4>
+        <h3 className='mb-5 mt-5'>Find Real Estate</h3>
         <p>Click on a State to View MLS Listings in your area</p>
         
         <p className='section1-container--divider mt-5 mb-5'></p>
